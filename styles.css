@@ -1,0 +1,481 @@
+/* ===== ESTILOS CUSTOMIZADOS - MD DERMATOLOGIA INTEGRADA ===== */
+
+/* Reset e Base */
+* {
+    scroll-behavior: smooth;
+}
+
+html {
+    scroll-padding-top: 80px; /* Ajuste para navbar fixa */
+}
+
+/* Tipografia customizada */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+}
+
+/* ===== NAVEGAÇÃO ===== */
+.nav-link {
+    position: relative;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 50%;
+    background-color: #B0DB9C;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+}
+
+/* Menu mobile */
+.mobile-menu {
+    transform: translateY(-10px);
+    opacity: 0;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.mobile-menu.show {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* ===== ANIMAÇÕES CUSTOMIZADAS ===== */
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse-green {
+    0%, 100% { 
+        box-shadow: 0 0 0 0 rgba(176, 219, 156, 0.7);
+    }
+    70% { 
+        box-shadow: 0 0 0 10px rgba(176, 219, 156, 0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* ===== WHATSAPP FLUTUANTE ===== */
+.whatsapp-float {
+    animation: float 3s ease-in-out infinite;
+}
+
+.whatsapp-float a {
+    animation: pulse-green 2s infinite;
+}
+
+.whatsapp-float:hover {
+    animation-play-state: paused;
+}
+
+/* ===== CARROSSEL DA CLÍNICA ===== */
+.clinic-carousel-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.clinic-carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.clinic-slide {
+    position: relative;
+    flex: 0 0 100%;
+}
+
+.clinic-slide img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+@media (min-width: 768px) {
+    .clinic-slide img {
+        height: 400px;
+    }
+}
+
+/* Controles do carrossel */
+.carousel-prev,
+.carousel-next {
+    transition: all 0.3s ease;
+    backdrop-filter: blur(8px);
+}
+
+.carousel-prev:hover,
+.carousel-next:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Indicadores do carrossel */
+.carousel-indicator {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.carousel-indicator:hover {
+    transform: scale(1.2);
+}
+
+.carousel-indicator.active {
+    background-color: #B0DB9C !important;
+    transform: scale(1.3);
+}
+
+/* ===== SEÇÕES ===== */
+section {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hero Section */
+#inicio {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+/* Efeito parallax no hero */
+@media (min-width: 768px) {
+    #inicio {
+        background-attachment: fixed;
+    }
+}
+
+/* ===== CARDS E COMPONENTES ===== */
+.service-card {
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    border-color: #B0DB9C;
+    box-shadow: 0 20px 40px rgba(176, 219, 156, 0.2);
+}
+
+/* ===== BOTÕES ===== */
+.btn-primary {
+    background: linear-gradient(135deg, #B0DB9C 0%, #CAE8BD 100%);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-primary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
+}
+
+.btn-primary:hover::before {
+    left: 100%;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(176, 219, 156, 0.4);
+}
+
+/* ===== FORMULÁRIOS E INPUTS ===== */
+.form-input {
+    transition: all 0.3s ease;
+    border: 2px solid #e5e7eb;
+}
+
+.form-input:focus {
+    border-color: #B0DB9C;
+    box-shadow: 0 0 0 3px rgba(176, 219, 156, 0.1);
+    outline: none;
+}
+
+/* ===== LOADING E ESTADOS ===== */
+.loading {
+    position: relative;
+    overflow: hidden;
+}
+
+.loading::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    animation: loading-animation 1.5s infinite;
+}
+
+@keyframes loading-animation {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+/* ===== SCROLLBAR CUSTOMIZADA ===== */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #B0DB9C 0%, #CAE8BD 100%);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #CAE8BD 0%, #B0DB9C 100%);
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 768px) {
+    /* Hero ajustes mobile */
+    #inicio {
+        background-attachment: scroll;
+        padding: 100px 0 50px;
+    }
+    
+    /* Texto hero mobile */
+    .hero-text {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+    
+    /* Cards mobile */
+    .service-card {
+        margin-bottom: 1rem;
+    }
+    
+    /* Navegação mobile */
+    .mobile-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: white;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 0 0 1rem 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* WhatsApp mobile */
+    .whatsapp-float {
+        bottom: 1rem;
+        right: 1rem;
+    }
+    
+    .whatsapp-float a {
+        padding: 12px;
+    }
+    
+    .whatsapp-float svg {
+        width: 24px;
+        height: 24px;
+    }
+    
+    /* Espaçamentos mobile */
+    section {
+        padding: 60px 0;
+    }
+    
+    .container {
+        padding: 0 1rem;
+    }
+}
+
+/* ===== ACESSIBILIDADE ===== */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    .whatsapp-float {
+        animation: none;
+    }
+}
+
+/* ===== MODO ESCURO (futuro) ===== */
+@media (prefers-color-scheme: dark) {
+    /* Preparação para modo escuro futuro */
+    :root {
+        --bg-primary: #1a1a1a;
+        --text-primary: #ffffff;
+        --verde-claro-dark: #2a4a2a;
+        --verde-medio-dark: #3a5a3a;
+    }
+}
+
+/* ===== PRINT STYLES ===== */
+@media print {
+    .whatsapp-float,
+    nav,
+    .carousel-prev,
+    .carousel-next,
+    .carousel-indicator {
+        display: none !important;
+    }
+    
+    section {
+        page-break-inside: avoid;
+        background: white !important;
+    }
+    
+    .clinic-carousel {
+        display: block;
+    }
+    
+    .clinic-slide {
+        display: block;
+        page-break-inside: avoid;
+        margin-bottom: 1rem;
+    }
+}
+
+/* ===== PERFORMANCE E OTIMIZAÇÕES ===== */
+.will-change-transform {
+    will-change: transform;
+}
+
+.will-change-opacity {
+    will-change: opacity;
+}
+
+/* Otimização de GPU para animações */
+.gpu-acceleration {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    perspective: 1000;
+}
+
+/* ===== ESTADOS DE FOCO MELHORADOS ===== */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 2px solid #B0DB9C;
+    outline-offset: 2px;
+    box-shadow: 0 0 0 3px rgba(176, 219, 156, 0.2);
+}
+
+/* ===== MICROINTERAÇÕES ===== */
+.hover-lift {
+    transition: transform 0.2s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-2px);
+}
+
+.hover-scale {
+    transition: transform 0.2s ease;
+}
+
+.hover-scale:hover {
+    transform: scale(1.05);
+}
+
+/* ===== UTILIDADES CUSTOMIZADAS ===== */
+.text-gradient {
+    background: linear-gradient(135deg, #B0DB9C 0%, #CAE8BD 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.bg-gradient-green {
+    background: linear-gradient(135deg, #ECFAE5 0%, #DDF6D2 50%, #CAE8BD 100%);
+}
+
+.shadow-green {
+    box-shadow: 0 10px 25px rgba(176, 219, 156, 0.3);
+}
+
+.border-gradient {
+    border: 2px solid;
+    border-image: linear-gradient(135deg, #B0DB9C, #CAE8BD) 1;
+}
+
+/* ===== COMPONENTES ESPECÍFICOS ===== */
+
+/* Card médico */
+.doctor-card {
+    background: linear-gradient(145deg, #ffffff 0%, #f8fffe 100%);
+    border: 1px solid rgba(176, 219, 156, 0.2);
+    transition: all 0.3s ease;
+}
+
+.doctor-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(176, 219, 156, 0.2);
+}
+
+/* Seção reviews */
+.reviews-section {
+    background: linear-gradient(135deg, #ECFAE5 0%, #DDF6D2 100%);
+}
+
+/* ===== ANIMAÇÕES DE ENTRADA ===== */
+.fade-in-up {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.slide-in-right {
+    animation: slideInRight 0.8s ease-out;
+}
+
+/* ===== FIM DO ARQUIVO CSS ===== */

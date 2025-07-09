@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO Meta Tags - substitua aqui conforme necessário -->
+    <title>Dr. Roberto Luís Rezende - Dermatologista | MD Dermatologia Integrada</title>
+    <meta name="description" content="Dr. Roberto Luís Rezende - Dermatologista especialista em Porto Alegre. Dermatologia clínica, estética e cirúrgica. CRM-RS 25079. Agende sua consulta.">
+    <meta name="keywords" content="dermatologista, dermatologia, Porto Alegre, Dr Roberto Rezende, toxina botulínica, cirurgia dermatológica">
+    <meta name="author" content="Dr. Roberto Luís Rezende">
+    <link rel="canonical" href="https://seudominio.com.br">
+    
+    <!-- Open Graph para redes sociais -->
+    <meta property="og:title" content="Dr. Roberto Luís Rezende - Dermatologista">
+    <meta property="og:description" content="Especialista em Dermatologia Clínica, Estética e Cirúrgica em Porto Alegre">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://seudominio.com.br">
+    <meta property="og:image" content="./img/dr-roberto.jpg">
+    
+    <!-- Favicon - substitua aqui -->
+    <link rel="icon" type="image/png" href="./img/logo.png">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Configuração customizada do Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'verde-claro': '#ECFAE5',
+                        'verde-medio': '#DDF6D2',
+                        'verde-forte': '#CAE8BD',
+                        'verde-escuro': '#B0DB9C'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- CSS customizado -->
+    <link rel="stylesheet" href="./styles.css">
+    
+    <!-- AOS Library para animações -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Google Reviews Plugin -->
+    <script src="https://static.elfsight.com/platform/platform.js" async></script>
+</head>
+<body class="bg-verde-claro font-sans antialiased">
+    
+    <!-- Navegação Fixa -->
+    <nav class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm shadow-lg z-50" role="navigation" aria-label="Navegação principal">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo - substitua aqui -->
+                <div class="flex-shrink-0">
+                    <img src="./img/logo.png" alt="MD Dermatologia Integrada Logo" class="h-12 w-auto">
+                </div>
+                
+                <!-- Menu Desktop -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#inicio" class="nav-link text-gray-700 hover:text-verde-escuro transition-colors duration-300" aria-label="Ir para seção Início">Início</a>
+                        <a href="#sobre" class="nav-link text-gray-700 hover:text-verde-escuro transition-colors duration-300" aria-label="Ir para seção Sobre">Sobre</a>
+                        <a href="#avaliacoes" class="nav-link text-gray-700 hover:text-verde-escuro transition-colors duration-300" aria-label="Ir para seção Avaliações">Avaliações</a>
+                        <a href="#clinica" class="nav-link text-gray-700 hover:text-verde-escuro transition-colors duration-300" aria-label="Ir para seção A Clínica">A Clínica</a>
+                        <a href="#localizacao" class="nav-link text-gray-700 hover:text-verde-escuro transition-colors duration-300" aria-label="Ir para seção Localização">Localização</a>
+                        <a href="#atuacao" class="nav-link text-gray-700 hover:text-verde-escuro transition-colors duration-300" aria-label="Ir para seção Áreas de Atuação">Áreas de Atuação</a>
+                    </div>
+                </div>
+                
+                <!-- Menu Mobile Button -->
+                <div class="md:hidden">
+                    <button type="button" class="mobile-menu-button bg-verde-escuro text-white p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-verde-forte" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menu de navegação">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Menu Mobile -->
+            <div class="mobile-menu hidden md:hidden bg-white shadow-lg rounded-lg mt-2 p-4" id="mobile-menu">
+                <div class="flex flex-col space-y-4">
+                    <a href="#inicio" class="nav-link text-gray-700 hover:text-verde-escuro transition-colors duration-300">Início</a>
+                    <a href="#sobre" class="nav-link text-gray-700 hover:text-verde-escuro transition-colors duration-300">Sobre</a>
+                    <a href="#avaliacoes" class="nav-link text-gray-700 hover:text-verde-escuro transition-colors duration-300">Avaliações</a>
+                    <a href="#clinica" class="nav-link text-gray-700 hover:text-verde-escuro transition-colors duration-300">A Clínica</a>
+                    <a href="#localizacao" class="nav-link text-gray-700 hover:text-verde-escuro transition-colors duration-300">Localização</a>
+                    <a href="#atuacao" class="nav-link text-gray-700 hover:text-verde-escuro transition-colors duration-300">Áreas de Atuação</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- WhatsApp Flutuante -->
+    <div class="whatsapp-float fixed bottom-6 right-6 z-50">
+        <a href="https://wa.me/5551991933393?text=Olá%20gostaria%20de%20agendar%20uma%20consulta%20com%20Dr.%20Roberto%20Rezende" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           class="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-all duration-300 hover:scale-110 flex items-center justify-center"
+           aria-label="Entrar em contato via WhatsApp">
+            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-2.462-.957-4.78-2.712-6.537-1.754-1.756-4.071-2.717-6.533-2.719-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.106-.617zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/>
+            </svg>
+        </a>
+    </div>
+
+    <main>
+        <!-- SEÇÃO INÍCIO -->
+        <section id="inicio" class="min-h-screen flex items-center justify-center relative bg-cover bg-center bg-fixed" 
+                 style="background-image: linear-gradient(rgba(236, 250, 229, 0.8), rgba(221, 246, 210, 0.8)), url('./img/hero-background.jpg');"
+                 role="banner"
+                 aria-labelledby="hero-heading">
+            <div class="container mx-auto px-4 text-center" data-aos="fade-up">
+                <div class="bg-white/90 backdrop-blur-sm rounded-3xl p-8 md:p-12 shadow-2xl max-w-4xl mx-auto">
+                    <h1 id="hero-heading" class="text-3xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-6 leading-tight">
+                        Dr. Roberto Luís Rezende
+                    </h1>
+                    <h2 class="text-xl md:text-2xl lg:text-3xl text-verde-escuro font-semibold mb-4">
+                        CRM-RS 25079 | RQE 15774
+                    </h2>
+                    <p class="text-lg md:text-xl text-gray-700 mb-8 max-w-2xl mx-auto leading-relaxed">
+                        Especialista em Dermatologia Clínica, Estética e Cirúrgica. Mais de 20 anos de experiência cuidando da saúde da sua pele.
+                    </p>
+                    
+                    <!-- Informações de Contato -->
+                    <div class="grid md:grid-cols-3 gap-6 mb-8 text-gray-700">
+                        <div class="flex items-center justify-center space-x-2" data-aos="fade-up" data-aos-delay="100">
+                            <svg class="w-5 h-5 text-verde-escuro" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                            </svg>
+                            <span>(51) 3377.3333</span>
+                        </div>
+                        <div class="flex items-center justify-center space-x-2" data-aos="fade-up" data-aos-delay="200">
+                            <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-2.462-.957-4.78-2.712-6.537-1.754-1.756-4.071-2.717-6.533-2.719-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.106-.617z"/>
+                            </svg>
+                            <span>(51) 99193-3393</span>
+                        </div>
+                        <div class="flex items-center justify-center space-x-2" data-aos="fade-up" data-aos-delay="300">
+                            <svg class="w-5 h-5 text-verde-escuro" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-center">Praia de Belas, 2124 sala 1002<br>Menino Deus - Porto Alegre/RS</span>
+                        </div>
+                    </div>
+                    
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                        <a href="https://wa.me/5551991933393?text=Olá%20gostaria%20de%20agendar%20uma%20consulta%20com%20Dr.%20Roberto%20Rezende" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           class="bg-verde-escuro hover:bg-verde-forte text-white font-bold py-4 px-8 rounded-full transition-all duration-300 hover:scale-105 shadow-lg flex items-center space-x-2"
+                           data-aos="fade-up" data-aos-delay="400">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654z"/>
+                            </svg>
+                            <span>Agendar Consulta</span>
+                        </a>
+                        <a href="tel:+555133773333" 
+                           class="bg-transparent border-2 border-verde-escuro text-verde-escuro hover:bg-verde-escuro hover:text-white font-bold py-4 px-8 rounded-full transition-all duration-300 hover:scale-105"
+                           data-aos="fade-up" data-aos-delay="500">
+                            Ligar Agora
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO SOBRE -->
+        <section id="sobre" class="py-20 bg-white" aria-labelledby="sobre-heading">
+            <div class="container mx-auto px-4">
+                <div class="max-w-6xl mx-auto">
+                    <div class="text-center mb-16" data-aos="fade-up">
+                        <h2 id="sobre-heading" class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">Sobre o Dr. Roberto</h2>
+                        <div class="w-24 h-1 bg-verde-escuro mx-auto"></div>
+                    </div>
+                    
+                    <div class="grid lg:grid-cols-2 gap-12 items-center">
+                        <!-- Foto do Médico - substitua aqui -->
+                        <div class="text-center lg:text-left" data-aos="fade-right">
+                            <div class="relative inline-block">
+                                <img src="./img/dr-roberto.jpg" 
+                                     alt="Dr. Roberto Luís Rezende - Dermatologista especialista" 
+                                     class="rounded-2xl shadow-2xl w-full max-w-md mx-auto lg:mx-0 object-cover h-96">
+                                <div class="absolute inset-0 bg-gradient-to-t from-verde-escuro/20 to-transparent rounded-2xl"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Conteúdo -->
+                        <div class="space-y-6" data-aos="fade-left">
+                            <div class="bg-verde-claro p-6 rounded-xl border-l-4 border-verde-escuro">
+                                <h3 class="text-2xl font-bold text-gray-800 mb-4">CRM-RS 25079 | RQE 15774</h3>
+                                <h4 class="text-xl font-semibold text-verde-escuro mb-4">Dermatologista</h4>
+                                <p class="text-gray-700 leading-relaxed">
+                                    Médico graduado pela Universidade Federal do Rio Grande do Sul (UFRGS).
+                                </p>
+                            </div>
+                            
+                            <div class="space-y-4 text-gray-700 leading-relaxed">
+                                <p><strong>• Graduação:</strong> Universidade Federal do Rio Grande do Sul (UFRGS) em 1999.</p>
+                                <p><strong>• Residência:</strong> Dermatologia pelo Serviço de Dermatologia do Hospital de Clínicas de Porto Alegre (HCPA) em 2002.</p>
+                                <p><strong>• Especialização:</strong> Titular Especialista em Dermatologia pela Sociedade Brasileira de Dermatologia (SBD).</p>
+                                <p><strong>• Membro:</strong> Sociedade Brasileira de Dermatologia (SBD).</p>
+                                <p><strong>• Pós-graduação:</strong> Cientista de Dados e Inteligência Artificial pela Pontifícia Universidade Católica de Porto Alegre (PUCRS) em 2024, atualmente focando no desenvolvimento da Inteligência Artificial na área da saúde.</p>
+                                <p><strong>• Responsável técnico:</strong> MD Dermatologia Integrada desde 2012.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO AVALIAÇÕES -->
+        <section id="avaliacoes" class="py-20 bg-verde-claro" aria-labelledby="avaliacoes-heading">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h2 id="avaliacoes-heading" class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">Avaliações dos Pacientes</h2>
+                    <div class="w-24 h-1 bg-verde-escuro mx-auto mb-6"></div>
+                    <p class="text-xl text-gray-700 max-w-2xl mx-auto">
+                        Veja o que nossos pacientes falam sobre o atendimento e os resultados obtidos.
+                    </p>
+                </div>
+                
+                <!-- Google Reviews Widget -->
+                <div class="max-w-4xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+                    <div class="elfsight-app-b65343b6-bf45-4c94-a143-037fd7c4c822" data-elfsight-app-lazy></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO A CLÍNICA -->
+        <section id="clinica" class="py-20 bg-white" aria-labelledby="clinica-heading">
+            <div class="container mx-auto px-4">
+                <div class="max-w-6xl mx-auto">
+                    <div class="text-center mb-16" data-aos="fade-up">
+                        <h2 id="clinica-heading" class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">A Clínica</h2>
+                        <div class="w-24 h-1 bg-verde-escuro mx-auto"></div>
+                    </div>
+                    
+                    <!-- Texto Descritivo -->
+                    <div class="mb-16" data-aos="fade-up">
+                        <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-6">
+                            <p>
+                                A dermatologia é a especialidade médica que se dedica ao diagnóstico e tratamento clínico e cirúrgico das enfermidades que acometem a pele, as mucosas, e aos anexos cutâneos: cabelos, pelos e unhas. O profissional dermatologista está apto a diagnosticar e tratar todas as doenças que afetam a pele.
+                            </p>
+                            
+                            <p>
+                                A <strong>MD Dermatologia Integrada</strong>, clínica do Dr. Roberto Luís Rezende e seus sócios, foi criada em outubro de 2012 e surgiu da necessidade do hospital Mãe de Deus de oferecer um atendimento qualificado para pacientes dermatológicos. Teve início como o Serviço de Dermatologia que funcionava dentro do próprio Hospital. Fomos pioneiros como serviço do Sistema de Saúde Mãe de Deus a funcionar fora do hospital.
+                            </p>
+                            
+                            <p>
+                                Fizemos a mudança da nossa sede em fevereiro de 2024. Temos uma infra-estrutura com três consultórios para atendimentos de consultas eletivas. Nossa equipe possui dermatologistas focados em subespecialidades e uma cirurgiã especializada em cirurgia dermatológica. Contamos ainda com uma técnica de enfermagem, uma auxiliar de limpeza e duas secretárias que complementam a equipe, desta forma oferecemos um atendimento diferenciado que abrange todas as necessidades do paciente.
+                            </p>
+                            
+                            <p class="bg-verde-claro p-6 rounded-xl border-l-4 border-verde-escuro">
+                                <strong>Em outubro de 2025 completamos 13 anos de existência com mais de 300.000 atendimentos prestados, agregando valor e confiança aos nossos pacientes.</strong>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Carrossel de Fotos da Clínica -->
+                    <div class="mb-8" data-aos="fade-up" data-aos-delay="200">
+                        <h3 class="text-2xl font-bold text-center text-gray-800 mb-8">Conheça Nossas Instalações</h3>
+                        <div class="clinic-carousel-container relative overflow-hidden rounded-2xl shadow-2xl">
+                            <div class="clinic-carousel flex transition-transform duration-500 ease-in-out">
+                                <!-- Foto 1 - substitua aqui -->
+                                <div class="clinic-slide w-full flex-none">
+                                    <img src="./img/clinica-1.jpg" alt="Recepção da MD Dermatologia Integrada" class="w-full h-80 md:h-96 object-cover">
+                                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
+                                        <h4 class="text-white text-xl font-semibold">Recepção</h4>
+                                        <p class="text-white/90">Ambiente acolhedor e moderno</p>
+                                    </div>
+                                </div>
+                                <!-- Foto 2 - substitua aqui -->
+                                <div class="clinic-slide w-full flex-none">
+                                    <img src="./img/clinica-2.jpg" alt="Consultório médico dermatológico" class="w-full h-80 md:h-96 object-cover">
+                                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
+                                        <h4 class="text-white text-xl font-semibold">Consultório</h4>
+                                        <p class="text-white/90">Equipamentos modernos para diagnóstico</p>
+                                    </div>
+                                </div>
+                                <!-- Foto 3 - substitua aqui -->
+                                <div class="clinic-slide w-full flex-none">
+                                    <img src="./img/clinica-3.jpg" alt="Sala de espera confortável" class="w-full h-80 md:h-96 object-cover">
+                                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
+                                        <h4 class="text-white text-xl font-semibold">Sala de Espera</h4>
+                                        <p class="text-white/90">Conforto para nossos pacientes</p>
+                                    </div>
+                                </div>
+                                <!-- Foto 4 - substitua aqui -->
+                                <div class="clinic-slide w-full flex-none">
+                                    <img src="./img/clinica-4.jpg" alt="Equipamentos dermatológicos avançados" class="w-full h-80 md:h-96 object-cover">
+                                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
+                                        <h4 class="text-white text-xl font-semibold">Equipamentos</h4>
+                                        <p class="text-white/90">Tecnologia avançada em dermatologia</p>
+                                    </div>
+                                </div>
+                                <!-- Foto 5 - substitua aqui -->
+                                <div class="clinic-slide w-full flex-none">
+                                    <img src="./img/clinica-5.jpg" alt="Corredor da clínica" class="w-full h-80 md:h-96 object-cover">
+                                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
+                                        <h4 class="text-white text-xl font-semibold">Instalações</h4>
+                                        <p class="text-white/90">Ambiente limpo e organizado</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Controles do Carrossel -->
+                            <button class="carousel-prev absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white text-verde-escuro p-2 rounded-full shadow-lg transition-all duration-300" aria-label="Foto anterior">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                                </svg>
+                            </button>
+                            <button class="carousel-next absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white text-verde-escuro p-2 rounded-full shadow-lg transition-all duration-300" aria-label="Próxima foto">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </button>
+                        </div>
+                        
+                        <!-- Indicadores -->
+                        <div class="flex justify-center mt-6 space-x-2">
+                            <button class="carousel-indicator w-3 h-3 rounded-full bg-verde-escuro transition-all duration-300" data-slide="0" aria-label="Ir para foto 1"></button>
+                            <button class="carousel-indicator w-3 h-3 rounded-full bg-gray-300 hover:bg-verde-forte transition-all duration-300" data-slide="1" aria-label="Ir para foto 2"></button>
+                            <button class="carousel-indicator w-3 h-3 rounded-full bg-gray-300 hover:bg-verde-forte transition-all duration-300" data-slide="2" aria-label="Ir para foto 3"></button>
+                            <button class="carousel-indicator w-3 h-3 rounded-full bg-gray-300 hover:bg-verde-forte transition-all duration-300" data-slide="3" aria-label="Ir para foto 4"></button>
+                            <button class="carousel-indicator w-3 h-3 rounded-full bg-gray-300 hover:bg-verde-forte transition-all duration-300" data-slide="4" aria-label="Ir para foto 5"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO LOCALIZAÇÃO -->
+        <section id="localizacao" class="py-20 bg-verde-claro" aria-labelledby="localizacao-heading">
+            <div class="container mx-auto px-4">
+                <div class="max-w-6xl mx-auto">
+                    <div class="text-center mb-16" data-aos="fade-up">
+                        <h2 id="localizacao-heading" class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">Localização</h2>
+                        <div class="w-24 h-1 bg-verde-escuro mx-auto mb-6"></div>
+                        <p class="text-xl text-gray-700">
+                            Estamos localizados no coração de Porto Alegre, com fácil acesso e estacionamento.
+                        </p>
+                    </div>
+                    
+                    <div class="grid lg:grid-cols-2 gap-12 items-start">
+                        <!-- Informações de Contato -->
+                        <div class="space-y-8" data-aos="fade-right">
+                            <div class="bg-white p-8 rounded-2xl shadow-lg">
+                                <h3 class="text-2xl font-bold text-gray-800 mb-6">Informações de Contato</h3>
+                                
+                                <div class="space-y-6">
+                                    <div class="flex items-start space-x-4">
+                                        <div class="bg-verde-escuro text-white p-3 rounded-full">
+                                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-semibold text-gray-800">Endereço</h4>
+                                            <p class="text-gray-600">Praia de Belas, 2124 sala 1002<br>Menino Deus - Porto Alegre/RS</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex items-start space-x-4">
+                                        <div class="bg-verde-escuro text-white p-3 rounded-full">
+                                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                                                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-semibold text-gray-800">Telefone</h4>
+                                            <p class="text-gray-600">(51) 3377.3333</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex items-start space-x-4">
+                                        <div class="bg-green-500 text-white p-3 rounded-full">
+                                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654z"/>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-semibold text-gray-800">WhatsApp</h4>
+                                            <p class="text-gray-600">(51) 99193-3393</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="mt-8">
+                                    <a href="https://wa.me/5551991933393?text=Olá%20gostaria%20de%20agendar%20uma%20consulta%20com%20Dr.%20Roberto%20Rezende" 
+                                       target="_blank" 
+                                       rel="noopener noreferrer"
+                                       class="w-full bg-verde-escuro hover:bg-verde-forte text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 hover:scale-105 inline-block text-center">
+                                        Agendar pelo WhatsApp
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Mapa -->
+                        <div class="space-y-6" data-aos="fade-left">
+                            <div class="bg-white p-4 rounded-2xl shadow-lg">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.284427057598!2d-51.229362699999996!3d-30.0573806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951923a913b5f273%3A0x485a50da1a811cb0!2sRoberto%20Lu%C3%ADs%20Rezende!5e0!3m2!1spt-BR!2sbr!4v1752021247629!5m2!1spt-BR!2sbr" 
+                                        width="100%" 
+                                        height="450" 
+                                        style="border:0;" 
+                                        allowfullscreen="" 
+                                        loading="lazy" 
+                                        referrerpolicy="no-referrer-when-downgrade"
+                                        class="rounded-xl"
+                                        title="Localização da MD Dermatologia Integrada">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO ÁREAS DE ATUAÇÃO -->
+        <section id="atuacao" class="py-20 bg-white" aria-labelledby="atuacao-heading">
+            <div class="container mx-auto px-4">
+                <div class="max-w-6xl mx-auto">
+                    <div class="text-center mb-16" data-aos="fade-up">
+                        <h2 id="atuacao-heading" class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">Áreas de Atuação</h2>
+                        <div class="w-24 h-1 bg-verde-escuro mx-auto mb-6"></div>
+                        <p class="text-xl text-gray-700 max-w-3xl mx-auto">
+                            Oferecemos tratamentos completos em dermatologia, com tecnologia avançada e cuidado personalizado.
+                        </p>
+                    </div>
+                    
+                    <!-- Cards das Áreas -->
+                    <div class="space-y-12">
+                        
+                        <!-- Dermatologia Estética -->
+                        <div class="bg-gradient-to-br from-verde-claro to-verde-medio p-8 rounded-3xl shadow-xl" data-aos="fade-up">
+                            <div class="flex items-center mb-6">
+                                <div class="w-16 h-16 bg-verde-escuro rounded-full flex items-center justify-center text-white mr-6">
+                                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                    </svg>
+                                </div>
+                                <h3 class="text-3xl font-bold text-gray-800">Dermatologia Estética</h3>
+                            </div>
+                            
+                            <p class="text-gray-700 leading-relaxed mb-8 text-lg">
+                                Dermatologia estética é a área da dermatologia que atua nas questões relacionadas a estética e beleza da pele, cabelos e unhas. Nesta especialidade, são realizados tratamentos visando a melhora de situações que possam trazer prejuízo estético, como cicatrizes, manchas, assim como melhoria dos sinais de envelhecimento, tais como rugas, sulcos, flacidez.
+                            </p>
+                            
+                            <!-- Procedimentos -->
+                            <div class="grid md:grid-cols-2 gap-8">
+                                <!-- Toxina Botulínica -->
+                                <div class="bg-white p-6 rounded-2xl shadow-lg">
+                                    <h4 class="text-xl font-bold text-verde-escuro mb-4">Toxina Botulínica</h4>
+                                    <p class="text-gray-700 leading-relaxed mb-4">
+                                        A toxina botulínica atua no rejuvenescimento por bloquear a contração da musculatura responsável pela mímica facial. Com a musculatura relaxada, e dependendo da profundidade das rugas na pele, estas rugas melhoram sua intensidade e até desaparecem.
+                                    </p>
+                                    <p class="text-gray-700 leading-relaxed">
+                                        É aplicada através de injeções com agulhas muito finas. Após o bloqueio da musculatura, que leva até 20 dias, o efeito perdura por um período que varia de 4 a 6 meses, dependendo do organismo de cada indivíduo.
+                                    </p>
+                                </div>
+                                
+                                <!-- Toxina para Hiperidrose -->
+                                <div class="bg-white p-6 rounded-2xl shadow-lg">
+                                    <h4 class="text-xl font-bold text-verde-escuro mb-4">Toxina Botulínica para Hiperidrose</h4>
+                                    <p class="text-gray-700 leading-relaxed mb-4">
+                                        A hiperidrose consiste na produção excessiva de suor, decorrente da hiperatividade das glândulas sudoríparas. Normalmente é acentuada pela ansiedade ou estresse. A sudorese excessiva pode prejudicar a qualidade de vida das pessoas afetadas.
+                                    </p>
+                                    <p class="text-gray-700 leading-relaxed">
+                                        A toxina botulínica pode ser usada com sucesso principalmente nas pessoas que têm hiperidrose axilar e, eventualmente, na hiperidrose palmar. Trata-se de um método minimamente invasivo, sem risco cirúrgico, com resultados rápidos e efetivos. A duração do efeito é de 6 a 10 meses.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Dermatologia Clínica -->
+                        <div class="bg-gradient-to-br from-verde-medio to-verde-forte p-8 rounded-3xl shadow-xl" data-aos="fade-up" data-aos-delay="200">
+                            <div class="flex items-center mb-6">
+                                <div class="w-16 h-16 bg-verde-escuro rounded-full flex items-center justify-center text-white mr-6">
+                                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/>
+                                    </svg>
+                                </div>
+                                <h3 class="text-3xl font-bold text-gray-800">Dermatologia Clínica</h3>
+                            </div>
+                            
+                            <p class="text-gray-700 leading-relaxed text-lg">
+                                A dermatologia clínica é responsável por estudar, diagnosticar e tratar as doenças que acometem a pele, as unhas e os cabelos. A dermatologia é a especialidade médica com maior número de doenças documentadas. As doenças dermatológicas podem ser classificadas de maneira simples dentro de grandes grupos, como por exemplo: doenças alérgicas, auto-imunes, infecções, infestações e tumores de pele.
+                            </p>
+                        </div>
+                        
+                        <!-- Dermatologia Cirúrgica -->
+                        <div class="bg-gradient-to-br from-verde-forte to-verde-escuro p-8 rounded-3xl shadow-xl text-white" data-aos="fade-up" data-aos-delay="400">
+                            <div class="flex items-center mb-6">
+                                <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center text-verde-escuro mr-6">
+                                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"/>
+                                    </svg>
+                                </div>
+                                <h3 class="text-3xl font-bold">Dermatologia Cirúrgica</h3>
+                            </div>
+                            
+                            <p class="leading-relaxed mb-8 text-lg opacity-95">
+                                A Cirurgia Dermatológica é uma área de atuação da Dermatologia que abrange procedimentos diversos, capazes de remover ou modificar a pele e o tecido celular subcutâneo, sejam eles diagnósticos, cirúrgicos ou oncológicos. Dentre os procedimentos realizados, podemos destacar: criocirurgia, remoção de pintas e sinais, eletrocirurgia, cirurgia Micrográfica de Mohs e eletrocirurgia, cirurgia de unha e transplante de cabelos.
+                            </p>
+                            
+                            <p class="leading-relaxed mb-8 text-lg opacity-95">
+                                Abrangente, a Cirurgia Dermatológica engloba desde tratamentos para melhorar a qualidade de vida e a auto-estima de seus pacientes até tratamentos para câncer de pele e outras doenças, utilizando o que existe de mais moderno em terapêutica médica.
+                            </p>
+                            
+                            <!-- Cirurgia Básica -->
+                            <div class="bg-white/10 backdrop-blur-sm p-6 rounded-2xl">
+                                <h4 class="text-xl font-bold mb-4">Cirurgia Básica</h4>
+                                <p class="leading-relaxed opacity-95">
+                                    Remoção de pintas, cistos, lipomas, unha encravada, entre outros procedimentos essenciais para a saúde dermatológica.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <!-- Logo - substitua aqui -->
+                    <img src="./img/logo.png" alt="MD Dermatologia Integrada" class="h-16 mb-4">
+                    <p class="text-gray-300 leading-relaxed">
+                        Cuidando da saúde da sua pele com excelência e dedicação há mais de 13 anos.
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contato</h3>
+                    <div class="space-y-2 text-gray-300">
+                        <p>Praia de Belas, 2124 sala 1002</p>
+                        <p>Menino Deus - Porto Alegre/RS</p>
+                        <p>Tel: (51) 3377.3333</p>
+                        <p>WhatsApp: (51) 99193-3393</p>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Navegação</h3>
+                    <div class="space-y-2">
+                        <a href="#inicio" class="block text-gray-300 hover:text-verde-escuro transition-colors">Início</a>
+                        <a href="#sobre" class="block text-gray-300 hover:text-verde-escuro transition-colors">Sobre</a>
+                        <a href="#avaliacoes" class="block text-gray-300 hover:text-verde-escuro transition-colors">Avaliações</a>
+                        <a href="#clinica" class="block text-gray-300 hover:text-verde-escuro transition-colors">A Clínica</a>
+                        <a href="#localizacao" class="block text-gray-300 hover:text-verde-escuro transition-colors">Localização</a>
+                        <a href="#atuacao" class="block text-gray-300 hover:text-verde-escuro transition-colors">Áreas de Atuação</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Dr. Roberto Luís Rezende - MD Dermatologia Integrada. Todos os direitos reservados.</p>
+                <p class="mt-2">CRM-RS 25079 | RQE 15774</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./script.js"></script>
+
+<style>
+#minimax-floating-ball {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 12px;
+  background: #222222;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  color: #F8F8F8;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  z-index: 9999;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#minimax-floating-ball:hover {
+  transform: translateY(-2px);
+  background: #383838;
+}
+
+.minimax-ball-content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.minimax-logo-wave {
+  width: 26px;
+  height: 22px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='22' viewBox='0 0 26 22' fill='none'%3E%3Cg clip-path='url(%23clip0_3442_102412)'%3E%3Cpath d='M12.8405 14.6775C12.8405 14.9897 13.0932 15.2424 13.4055 15.2424C13.7178 15.2424 13.9705 14.9897 13.9705 14.6775V2.98254C13.9705 1.88957 13.0809 1 11.9879 1C10.895 1 10.0054 1.88957 10.0054 2.98254V11.566V17.1068C10.0054 17.5773 9.62327 17.9594 9.1528 17.9594C8.68233 17.9594 8.30021 17.5773 8.30021 17.1068V8.04469C8.30021 6.95172 7.41063 6.06215 6.31767 6.06215C5.22471 6.06215 4.33513 6.95172 4.33513 8.04469V11.8855C4.33513 12.3559 3.953 12.7381 3.48254 12.7381C3.01207 12.7381 2.62994 12.3559 2.62994 11.8855V10.4936C2.62994 10.1813 2.37725 9.92861 2.06497 9.92861C1.7527 9.92861 1.5 10.1813 1.5 10.4936V11.8855C1.5 12.9784 2.38957 13.868 3.48254 13.868C4.5755 13.868 5.46508 12.9784 5.46508 11.8855V8.04469C5.46508 7.57422 5.8472 7.19209 6.31767 7.19209C6.78814 7.19209 7.17026 7.57422 7.17026 8.04469V17.1068C7.17026 18.1998 8.05984 19.0894 9.1528 19.0894C10.2458 19.0894 11.1353 18.1998 11.1353 17.1068V2.98254C11.1353 2.51207 11.5175 2.12994 11.9879 2.12994C12.4584 2.12994 12.8405 2.51207 12.8405 2.98254V14.6775Z' fill='%23F8F8F8'/%3E%3Cpath d='M23.3278 6.06215C22.2348 6.06215 21.3452 6.95172 21.3452 8.04469V15.6143C21.3452 16.0847 20.9631 16.4669 20.4926 16.4669C20.0222 16.4669 19.6401 16.0847 19.6401 15.6143V2.98254C19.6401 1.88957 18.7505 1 17.6575 1C16.5645 1 15.675 1.88957 15.675 2.98254V19.0175C15.675 19.4879 15.2928 19.8701 14.8224 19.8701C14.3519 19.8701 13.9698 19.4879 13.9698 19.0175V17.0329C13.9698 16.7206 13.7171 16.4679 13.4048 16.4679C13.0925 16.4679 12.8398 16.7206 12.8398 17.0329V19.0175C12.8398 20.1104 13.7294 21 14.8224 21C15.9153 21 16.8049 20.1104 16.8049 19.0175V2.98254C16.8049 2.51207 17.187 2.12994 17.6575 2.12994C18.128 2.12994 18.5101 2.51207 18.5101 2.98254V15.6143C18.5101 16.7072 19.3997 17.5968 20.4926 17.5968C21.5856 17.5968 22.4752 16.7072 22.4752 15.6143V8.04469C22.4752 7.57422 22.8573 7.19209 23.3278 7.19209C23.7982 7.19209 24.1804 7.57422 24.1804 8.04469V14.6775C24.1804 14.9897 24.4331 15.2424 24.7453 15.2424C25.0576 15.2424 25.3103 14.9897 25.3103 14.6775V8.04469C25.3103 6.95172 24.4207 6.06215 23.3278 6.06215Z' fill='%23F8F8F8'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_3442_102412'%3E%3Crect width='25' height='22' fill='white' transform='translate(0.5)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.minimax-ball-text {
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.minimax-close-icon {
+  margin-left: 8px;
+  font-size: 16px;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.minimax-close-icon:hover {
+  opacity: 1;
+}
+</style>
+<div id="minimax-floating-ball">
+  <div class="minimax-ball-content">
+    <div class="minimax-logo-wave"></div>
+    <span class="minimax-ball-text">Created by MiniMax Agent</span>
+  </div>
+  <div class="minimax-close-icon">×</div>
+</div>
+<script>
+// Initialize floating ball functionality
+function initFloatingBall() {
+  const ball = document.getElementById('minimax-floating-ball');
+  if (!ball) return;
+
+  // Initial animation
+  ball.style.opacity = '0';
+  ball.style.transform = 'translateY(20px)';
+
+  setTimeout(() => {
+    ball.style.opacity = '1';
+    ball.style.transform = 'translateY(0)';
+  }, 500);
+
+  // Handle logo click
+  const ballContent = ball.querySelector('.minimax-ball-content');
+  ballContent.addEventListener('click', function (e) {
+    e.stopPropagation();
+    window.open('https://agent.minimax.io/agent', '_blank');
+    ball.style.transform = 'scale(0.95)';
+    setTimeout(() => {
+      ball.style.transform = 'scale(1)';
+    }, 100);
+  });
+
+  // Handle close button click
+  const closeIcon = ball.querySelector('.minimax-close-icon');
+  closeIcon.addEventListener('click', function (e) {
+    e.stopPropagation();
+    ball.style.opacity = '0';
+    ball.style.transform = 'translateY(20px)';
+
+    setTimeout(() => {
+      ball.style.display = 'none';
+    }, 300);
+  });
+}
+
+// Initialize when DOM is ready
+document.addEventListener('DOMContentLoaded', initFloatingBall); 
+</script>
+
+</body>
+</html>
