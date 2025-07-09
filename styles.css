@@ -16,8 +16,7 @@ html {
     --color-verde-claro: #ECFAE5;
     --color-verde-medio: #DDF6D2;
     --color-verde-forte: #CAE8BD;
-    --color-verde-escuro: #B0DB9C;
-    --color-white: #FFFFFF; /* Adicione o branco se precisar como variável */
+    --color-verde-escuro: #B0DB9C;    
     --color-gray-700: #4B5563; /* Exemplo: se você usar muito, pode virar variável */
     --color-gray-800: #1F2937;
     --color-green-500: #22C55E; /* Cor do WhatsApp, se quiser padronizar */
@@ -370,7 +369,7 @@ section {
     /* Preparação para modo escuro futuro */
     :root {
         --bg-primary: #1a1a1a;
-        --text-primary: var(--color-white);
+        --text-primary: #FFFFFF;
         --verde-claro-dark: #2a4a2a;
         --verde-medio-dark: #3a5a3a;
     }
@@ -471,7 +470,7 @@ select:focus {
 
 /* Card médico */
 .doctor-card {
-    background: linear-gradient(145deg, var(--color-white) 0%, #f8fffe 100%);
+    background: linear-gradient(145deg, #FFFFFF 0%, #f8fffe 100%);
     border: 1px solid rgba(176, 219, 156, 0.2);
     transition: all 0.3s ease;
 }
