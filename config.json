@@ -34,38 +34,45 @@
     "imagens": [
       {
         "arquivo": "clinica-1.jpg",
-        "titulo": "Recepção",
-        "descricao": "Ambiente acolhedor e moderno"
+        "titulo": "Sala de Espera",
+        "descricao": "Ambiente acolhedor e moderno",
+        "alt_text": "Vista frontal da sala de espera mostrando a logomarca da empresa MD Dermatologia Integrada."
       },
       {
         "arquivo": "clinica-2.jpg",
-        "titulo": "Consultório",
-        "descricao": "Equipamentos modernos para diagnóstico"
+        "titulo": "Consultório 3",
+        "descricao": "Ambiente moderno com vista para o Beira-Rio",
+        "alt_text": "Vista frontal do consultório 3 da empresa MD Dermatologia Integrada, mostrando maca e mesa de atendimento."
       },
       {
         "arquivo": "clinica-3.jpg",
-        "titulo": "Sala de Espera",
-        "descricao": "Conforto para nossos pacientes"
+        "titulo": "Recepção e Sala de Espera",
+        "descricao": "Conforto para nossos pacientes",
+        "alt_text": "Vista lateral da recepção mostrando a logomarca da empresa MD Dermatologia Integrada, parte da recepção e cadeiras."
       },
       {
         "arquivo": "clinica-4.jpg",
-        "titulo": "Equipamentos",
-        "descricao": "Tecnologia avançada em dermatologia"
+        "titulo": "Consultório 2",
+        "descricao": "Ambiente aconchegante e moderno",
+        "alt_text": "Vista frontal do consultório 2 da empresa MD Dermatologia Integrada, mostrando mesa de atendimento e maca"
       },
       {
         "arquivo": "clinica-5.jpg",
-        "titulo": "Instalações",
-        "descricao": "Ambiente limpo e organizado"
+        "titulo": "Consultório 1",
+        "descricao": "Ambiente amplo e linda vista",
+        "alt_text": "Vista frontal do consultório 1 da empresa MD Dermatologia Integrada, mostrando mesa de atendimento e maca"
       },
       {
         "arquivo": "clinica-6.jpg",
-        "titulo": "Atendimento",
-        "descricao": "Espaços modernos para cuidado especializado"
+        "titulo": "Vista da Recepção e Sala de Espera",
+        "descricao": "Linda vista enquanto você aguarda",
+        "alt_text": "Vista lateral da recepção mostrando a logomarca da empresa MD Dermatologia Integrada, cadeiras da sala de espera e parte da recepção, além da vista da janela"
       },
       {
         "arquivo": "clinica-7.jpg",
-        "titulo": "Tecnologia",
-        "descricao": "Equipamentos avançados de dermatologia"
+        "titulo": "Consultório 2",
+        "descricao": "Ambiente aconchegante e linda vista",
+        "alt_text": "Vista frontal do consultório 2 da empresa MD Dermatologia Integrada, mostrando mesa de atendimento e maca"
       }
     ]
   },
