@@ -101,17 +101,24 @@ const DynamicContentModule = {
     },
 
     populateDoctorInfo() {
-        // Populate doctor's curriculum dynamically
-        const curriculumContainer = document.querySelector('#sobre .space-y-4');
-        if (curriculumContainer && siteConfig.medico?.curriculo?.formacao) {
-            // Clear existing content except the first element (title)
-            const children = Array.from(curriculumContainer.children);
-            children.slice(1).forEach(child => child.remove());
-            
-            // Add formation items
+        const curriculumContainer = document.getElementById('doctor-curriculum-content');
+        
+        if (curriculumContainer && siteConfig.medico?.curriculo?.formacao) {        
+            curriculumContainer.innerHTML = ''; // Limpa todo o conteúdo deste div
+
+            // Adiciona a introdução ao currículo se ela existir no config.json
+            if (siteConfig.medico.curriculo.titulo) {
+                const introP = document.createElement('p');
+                introP.className = 'text-gray-700 leading-relaxed';
+                introP.innerHTML = `${siteConfig.medico.curriculo.titulo}`;
+                curriculumContainer.appendChild(introP);
+            }
+
+            // Adiciona cada item de formação
             siteConfig.medico.curriculo.formacao.forEach(item => {
                 const p = document.createElement('p');
                 p.className = 'text-gray-700 leading-relaxed';
+                p.setAttribute('data-generated-formation', 'true'); // Adiciona um atributo para fácil identificação
                 p.innerHTML = `<strong>•</strong> ${item}`;
                 curriculumContainer.appendChild(p);
             });
