@@ -82,7 +82,7 @@ const DynamicContentModule = {
                 const slide = document.createElement('div');
                 slide.className = 'clinic-slide w-full flex-none relative';
                 slide.innerHTML = `
-                    <img src="./img/${imagem.arquivo}" alt="${imagem.titulo} da MD Dermatologia Integrada" class="w-full h-80 md:h-96 object-cover">
+                    <img src="./img/${imagem.arquivo}" alt="${imagem.alt_text || imagem.titulo}" class="w-full h-80 md:h-96 object-cover">                    
                     <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
                         <h4 class="text-white text-xl font-semibold">${imagem.titulo}</h4>
                         <p class="text-white/90">${imagem.descricao}</p>
