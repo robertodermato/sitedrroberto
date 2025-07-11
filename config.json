@@ -31,6 +31,14 @@
       "instalacoes": "Fizemos a mudança da nossa sede em fevereiro de 2024. Temos uma infra-estrutura com três consultórios para atendimentos de consultas eletivas. Nossa equipe possui dermatologistas focados em subespecialidades e uma cirurgiã especializada em cirurgia dermatológica. Contamos ainda com uma técnica de enfermagem, uma auxiliar de limpeza e duas secretárias que complementam a equipe, desta forma oferecemos um atendimento diferenciado que abrange todas as necessidades do paciente.",
       "milestone": "Em outubro de 2025 completamos 13 anos de existência com mais de 300.000 atendimentos prestados, agregando valor e confiança aos nossos pacientes."
     },
+    "convenios": [
+            "Unimed",
+            "IPE",
+            "Amil",
+            "Sulamerica",
+            "Bradesco",
+            "Cabergs"
+        ],
     "imagens": [
       {
         "arquivo": "clinica-1.jpg",
