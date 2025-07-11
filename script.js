@@ -58,6 +58,25 @@ const DynamicContentModule = {
             this.populateDoctorInfo();
             this.populateClinicInfo();
             this.populateContactInfo();
+            this.populateConvenios();
+        }
+    },
+
+     populateConvenios() {
+        const conveniosContainer = document.getElementById('convenios-container');
+        if (conveniosContainer && siteConfig.clinica?.convenios && siteConfig.clinica.convenios.length > 0) {
+            conveniosContainer.innerHTML = ''; // Limpa o container antes de adicionar os novos botões
+
+            siteConfig.clinica.convenios.forEach(convenio => {
+                const button = document.createElement('button');
+                button.className = 'bg-verde-escuro text-white px-6 py-3 rounded-lg font-semibold text-lg hover:bg-verde-claro transition duration-300 ease-in-out shadow-md';
+                button.textContent = convenio;
+                // Se você quiser que o botão faça algo (ex: abrir um modal com mais info), adicione um event listener aqui
+                // button.addEventListener('click', () => {
+                //     alert(`Você clicou no convênio: ${convenio}`);
+                // });
+                conveniosContainer.appendChild(button);
+            });
         }
     },
 
