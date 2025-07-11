@@ -17,7 +17,7 @@
     <meta property="og:url" content="https://robertodermatologista.com.br">
     <meta property="og:image" content="./img/dr-roberto.jpg">
     
-    <!-- Favicon - substitua aqui -->
+    <!-- Logomarca -->
     <link rel="icon" type="image/png" href="./img/logo.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -62,7 +62,7 @@
     <nav class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm shadow-lg z-50" role="navigation" aria-label="Navegação principal">
         <div class="container mx-auto px-4">
             <div class="flex items-center justify-between h-16">
-                <!-- Logo - substitua aqui -->
+                <!-- Logo -->
                 <div class="flex-shrink-0 flex items-center space-x-2"> <img src="./img/logo.png" alt="Logo Dr. Roberto Rezende" class="h-8 w-auto"> 
                     <span class="bg-verde-escuro text-white px-3 py-1.5 rounded-lg font-bold text-sm"> Dr. Roberto Rezende
                     </span>
@@ -189,8 +189,10 @@
                     </div>
                     
                     <div class="grid lg:grid-cols-2 gap-12 items-center">
-                        <!-- Foto do Médico - substitua aqui -->
+                        <!-- Parte esquerda da div -->
                         <div class="text-center lg:text-left" data-aos="fade-right">
+                            
+                            <!-- Foto do Roberto -->
                             <div class="relative inline-block">
                                 <img src="./img/dr-roberto.jpg" 
                                      alt="Retrato do Dr. Roberto Luís Rezende, Dermatologista especialista, sentado em sua mesa de trabalho" 
@@ -198,17 +200,19 @@
                                 <div class="absolute inset-0 bg-gradient-to-t from-verde-escuro/20 to-transparent rounded-2xl"></div>
                             </div>
 
-                            <div class="mt-8 text-center lg:text-left"> 
-                                <a href="https://www.instagram.com/roberto.dermato/" target="_blank" rel="noopener noreferrer"
-                                   class="inline-flex items-center justify-center bg-verde-escuro text-white px-6 py-3 rounded-lg font-semibold text-lg hover:bg-verde-claro transition duration-300 ease-in-out shadow-md space-x-2">
+                            <!-- Instagram -->
+                            <div class="mt-8 flex justify-center lg:justify-start"> 
+                                <a href="https://www.instagram.com/dermatodrroberto/" target="_blank" rel="noopener noreferrer"
+                                   class="inline-flex items-center space-x-2 bg-verde-escuro text-white px-6 py-3 rounded-lg font-semibold text-lg hover:bg-verde-forte transition-colors duration-300 ease-in-out shadow-md">
                                     <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M12 2C8.687 2 7.008 2.025 5.812 2.083c-1.12.055-1.895.234-2.585.509a4.847 4.847 0 00-1.745 1.139C.887 4.542.497 5.253.253 6.095c-.244.842-.423 1.617-.478 2.737-.058 1.196-.083 2.875-.083 6.25s.025 5.054.083 6.25c.055 1.12.234 1.895.509 2.585a4.847 4.847 0 001.139 1.745c.842.244 1.553.497 2.395.741c.842.244 1.617.423 2.737.478 1.196.058 2.875.083 6.25.083s5.054-.025 6.25-.083c1.12-.055 1.895-.234 2.585-.509a4.847 4.847 0 001.745-1.139c.842-.244 1.553-.497 2.395-.741c.842-.244 1.617-.423 2.737-.478 1.196-.058 2.875-.083 6.25-.083s5.054.025 6.25.083c1.12.055 1.895.234 2.585.509a4.847 4.847 0 001.745 1.139c.842.244 1.553.497 2.395.741c.842.244 1.617.423 2.737.478 1.196.058 2.875.083 6.25-.083s5.054-.025 6.25-.083c1.12-.055 1.895-.234 2.585-.509a4.847 4.847 0 001.745-1.139c.842-.244 1.553-.497 2.395-.741c.842-.244 1.617-.423 2.737-.478 1.196-.058 2.875-.083 6.25-.083s5.054.025 6.25.083zM12 6.5A5.5 5.5 0 1012 17.5A5.5 5.5 0 0012 6.5zm0 2A3.5 3.5 0 1112 15A3.5 3.5 0 0112 8.5zM17.25 6.5A1.25 1.25 0 1117.25 9A1.25 1.25 0 0117.25 6.5z"/>
+                                        <path fill-rule="evenodd" d="M12 0C8.74 0 8.33 0 7.02 0.05C5.7 0.11 4.54 0.28 3.52 0.7C2.52 1.1 1.7 1.88 1.1 2.88C0.7 3.9 0.28 5.06 0.22 6.38C0.16 7.69 0.16 8.09 0.16 12C0.16 15.91 0.16 16.31 0.22 17.62C0.28 18.94 0.7 20.1 1.1 21.12C1.88 22.12 2.7 22.9 3.52 23.3C4.54 23.72 5.7 23.88 7.02 23.95C8.33 23.95 8.74 24 12 24C15.26 24 15.67 24 16.98 23.95C18.3 23.88 19.46 23.72 20.48 23.3C21.48 22.9 22.3 22.12 22.9 21.12C23.3 20.1 23.72 18.94 23.78 17.62C23.84 16.31 23.84 15.91 23.84 12C23.84 8.09 23.84 7.69 23.78 6.38C23.72 5.06 23.3 3.9 22.9 2.88C22.12 1.88 21.3 1.1 20.48 0.7C19.46 0.28 18.3 0.11 16.98 0.05C15.67 0 15.26 0 12 0ZM12 5.8C15.46 5.8 18.2 8.54 18.2 12C18.2 15.46 15.46 18.2 12 18.2C8.54 18.2 5.8 15.46 5.8 12C5.8 8.54 8.54 5.8 12 5.8ZM12 7.4C9.42 7.4 7.4 9.42 7.4 12C7.4 14.58 9.42 16.6 12 16.6C14.58 16.6 16.6 14.58 16.6 12C16.6 9.42 14.58 7.4 12 7.4ZM18.47 4.25C17.95 4.25 17.53 4.67 17.53 5.19C17.53 5.71 17.95 6.13 18.47 6.13C18.99 6.13 19.41 5.71 19.41 5.19C19.41 4.67 18.99 4.25 18.47 4.25Z" clip-rule="evenodd"/>
                                     </svg>
                                     <span>Meu Instagram Profissional</span>
                                 </a>
                             </div>
                         </div>
-                        
+
+                        <!-- Parte direita da div -->
                         <!-- Conteúdo -->
                         <div class="space-y-6" data-aos="fade-left">
                             <div class="bg-verde-claro p-6 rounded-xl border-l-4 border-verde-escuro">
