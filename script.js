@@ -212,16 +212,17 @@ const NavigationModule = {
 
     setupActiveNavigation() {
         // Highlighting ativo baseado na seção visível
-        const navLinksForObserver = document.querySelectorAll('.nav-link[href^="#"]');
-        const targetSelectors = Array.from(navLinksForObserver)
+        const navLinksObserver = document.querySelectorAll('.nav-link[href^="#"]');
+        const targetSelectors = Array.from(navLinksObserver)
           .map(link => link.getAttribute('href'))
-          .filter(href => href.length > 1)
+          .filter(href => href && href.length > 1)
           .join(',');
 
-        const sections = document.querySelectorAll(targetSelectors);
-        //const sections = document.querySelectorAll('section[id]');
-        const navLinks = document.querySelectorAll('.nav-link');
-        
+        if (!targetSelectors) return; // Sai se não houver alvos para observar
+
+        const sections = document.querySelectorAll(targetSelectors);
+        const navLinks = document.querySelectorAll('.nav-link');
+
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
