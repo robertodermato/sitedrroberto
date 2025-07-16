@@ -69,7 +69,7 @@ const DynamicContentModule = {
 
             siteConfig.clinica.convenios.forEach(convenio => {
                 const button = document.createElement('button');
-                button.className = 'bg-verde-escuro text-white px-6 py-3 rounded-lg font-semibold text-lg hover:bg-verde-claro transition duration-300 ease-in-out shadow-md';
+                button.className = 'bg-verde-escuro text-white px-6 py-3 rounded-lg font-semibold text-lg hover:bg-verde-forte transition duration-300 ease-in-out shadow-md';
                 button.textContent = convenio;
                 // Se você quiser que o botão faça algo (ex: abrir um modal com mais info), adicione um event listener aqui
                 // button.addEventListener('click', () => {
