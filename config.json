@@ -157,6 +157,11 @@
       "titulo": "A Clínica"
     },
     {
+      "id": "convenios",
+      "nome": "Convênios",
+      "titulo": "Convênios Atendidos"
+    },
+    {
       "id": "localizacao",
       "nome": "Localização",
       "titulo": "Localização"
