@@ -150,7 +150,7 @@ const DynamicContentModule = {
         if (clinicSection && siteConfig.clinica?.descricao) {
             clinicSection.innerHTML = `
                 <p>${siteConfig.clinica.descricao.introducao}</p>
-                <p><strong>${siteConfig.clinica.nome}</strong>, clínica do Dr. Roberto Luís Rezende e seus sócios, ${siteConfig.clinica.descricao.historia}</p>
+                <p>${siteConfig.clinica.descricao.historia}</p>
                 <p>${siteConfig.clinica.descricao.instalacoes}</p>
                 <p class="bg-verde-claro p-6 rounded-xl border-l-4 border-verde-escuro">
                     <strong>${siteConfig.clinica.descricao.milestone}</strong>
