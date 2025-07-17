@@ -495,3 +495,95 @@ select:focus {
 }
 
 /* ===== FIM DO ARQUIVO CSS ===== */
+
+
+/* ===== CONFIGURAÇÃO DE CORES E MODO ESCURO ===== */
+
+/* Cores do tema claro (Padrão) */
+:root {
+    --color-background: #FFFFFF; /* Fundo branco */
+    --color-surface: #ECFAE5;    /* Superfície de cartões, seções, etc. */
+    --color-text-primary: #1F2937; /* Texto principal (era gray-800) */
+    --color-text-secondary: #4B5563; /* Texto secundário (era gray-700) */
+    --color-brand-light: #ECFAE5;
+    --color-brand-medium: #DDF6D2;
+    --color-brand-strong: #CAE8BD;
+    --color-brand-dark: #B0DB9C;
+}
+
+/* Cores do tema escuro */
+html.dark {
+    --color-background: #181a1b; /* Fundo escuro */
+    --color-surface: #25282a;    /* Cor de superfície um pouco mais clara */
+    --color-text-primary: #cdc8c2; /* Texto principal claro */
+    --color-text-secondary: #a09a94; /* Texto secundário com um pouco menos de brilho */
+    --color-brand-light: #aad894;
+    --color-brand-medium: #3b6825;
+    --color-brand-strong: #334d1b;
+    --color-brand-dark: #233a0b;
+}
+
+/* ===== APLICAÇÃO DAS VARIÁVEIS GLOBAIS ===== */
+
+/* Aplica as cores base ao corpo do site */
+body {
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ----- Overrides para Modo Escuro ----- */
+
+/* Altera a cor de fundo de elementos que eram brancos */
+html.dark .bg-white,
+html.dark .bg-white\/90, /* Corresponde a bg-white/90 de Tailwind */
+html.dark .bg-white\/95, /* Corresponde a bg-white/95 de Tailwind */
+html.dark .bg-gradient-to-br.from-verde-claro {
+    background: var(--color-background);
+}
+
+/* Altera a cor de fundo de seções que eram verde-claro */
+html.dark .bg-verde-claro {
+    background-color: var(--color-surface);
+}
+
+/* Ajusta as cores de texto */
+html.dark .text-gray-800,
+html.dark .text-gray-700,
+html.dark .text-gray-600 {
+    color: var(--color-text-primary);
+}
+
+/* Ajusta as cores dos links de navegação */
+html.dark .nav-link {
+    color: var(--color-text-secondary);
+}
+html.dark .nav-link:hover,
+html.dark .nav-link.active {
+    color: var(--color-brand-light);
+}
+html.dark .nav-link::after {
+    background-color: var(--color-brand-light);
+}
+
+/* Ajusta a cor de fundo e borda dos botões e tags */
+html.dark .bg-verde-escuro {
+    background-color: var(--color-brand-dark);
+    color: var(--color-text-primary);
+}
+html.dark a.bg-verde-escuro:hover {
+    background-color: var(--color-brand-strong);
+}
+html.dark a.border-verde-escuro {
+    border-color: var(--color-brand-dark);
+    color: var(--color-brand-light);
+}
+html.dark a.border-verde-escuro:hover {
+    background-color: var(--color-brand-dark);
+    color: var(--color-text-primary);
+}
+
+/* Ajusta a cor de fundo do footer */
+html.dark footer {
+    background-color: var(--color-brand-dark) !important;
+}
