@@ -587,3 +587,11 @@ html.dark a.border-verde-escuro:hover {
 html.dark footer {
     background-color: var(--color-brand-dark) !important;
 }
+
+/* Ajuste fino para o botão de tema no menu mobile */
+html.dark .mobile-menu .theme-toggle {
+    color: var(--color-text-primary);
+}
+html.dark .mobile-menu .border-t {
+    border-color: rgba(205, 200, 194, 0.2); /* Deixa a linha divisória mais sutil */
+}
