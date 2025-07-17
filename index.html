@@ -80,12 +80,13 @@
                         <a href="#localizacao" class="nav-link text-gray-700 hover:text-verde-escuro transition-colors duration-300" aria-label="Ir para seção Localização">Localização</a>
                         <a href="#atuacao" class="nav-link text-gray-700 hover:text-verde-escuro transition-colors duration-300" aria-label="Ir para seção Áreas de Atuação">Áreas de Atuação</a>
                     </div>
+                    
                     <!-- Dark Mode -->
-                    <button id="theme-toggle" type="button" class="text-gray-700 hover:text-verde-escuro p-2 rounded-full transition-colors duration-300" aria-label="Alternar tema">
-                        <svg id="theme-icon-sun" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <button class="theme-toggle" type="button" class="text-gray-700 hover:text-verde-escuro p-2 rounded-full transition-colors duration-300" aria-label="Alternar tema">
+                        <svg class="theme-icon-sun" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
                         </svg>
-                        <svg id="theme-icon-moon" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <svg class="theme-icon-moon" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
                         </svg>
                     </button>
@@ -97,16 +98,7 @@
                         <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
-                    </button>
-                    <!-- Dark Mode -->
-                    <button id="theme-toggle" type="button" class="text-gray-700 hover:text-verde-escuro p-2 rounded-full transition-colors duration-300" aria-label="Alternar tema">
-                        <svg id="theme-icon-sun" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
-                        </svg>
-                        <svg id="theme-icon-moon" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
-                        </svg>
-                    </button>
+                    </button>                    
                 </div>
             </div>
             
@@ -121,6 +113,20 @@
                     <a href="#convenios" class="nav-link text-gray-700 hover:text-verde-escuro transition-colors duration-300">Convênios</a>
                     <a href="#localizacao" class="nav-link text-gray-700 hover:text-verde-escuro transition-colors duration-300">Localização</a>
                     <a href="#atuacao" class="nav-link text-gray-700 hover:text-verde-escuro transition-colors duration-300">Áreas de Atuação</a>
+                </div>
+                <!-- Dark Mode -->
+                <div class="border-t border-gray-200/60 pt-4 mt-2">
+                    <a href="#" class="theme-toggle flex justify-between items-center w-full text-gray-700 hover:text-verde-escuro transition-colors duration-300" aria-label="Alternar tema">
+                        <span>Alternar Tema</span>
+                        <span class="relative h-6 w-6">
+                            <svg class="theme-icon-sun h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                            </svg>
+                            <svg class="theme-icon-moon h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                            </svg>
+                        </span>
+                    </a>
                 </div>
             </div>
         </div>
