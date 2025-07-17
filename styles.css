@@ -592,6 +592,16 @@ html.dark footer {
 html.dark .mobile-menu .theme-toggle {
     color: var(--color-text-primary);
 }
+
+/* Ajuste para cor do ícone do tema em modo escuro */
+html.dark .theme-toggle {
+    color: var(--color-text-primary);
+}
+html.dark .theme-toggle:hover {
+    color: var(--color-brand-light);
+}
+
+/* Garante que a borda no menu mobile (que foi removida) não tenha regras órfãs */
 html.dark .mobile-menu .border-t {
-    border-color: rgba(205, 200, 194, 0.2); /* Deixa a linha divisória mais sutil */
+    border-color: rgba(205, 200, 194, 0.2);
 }
