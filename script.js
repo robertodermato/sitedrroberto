@@ -687,11 +687,8 @@ const AccessibilityModule = {
 // ===== MÓDULO DE TEMA (MODO ESCURO) =====
 const ThemeModule = {
     init() {
-        this.themeToggleButton = document.getElementById('theme-toggle');
-        this.sunIcon = document.getElementById('theme-icon-sun');
-        this.moonIcon = document.getElementById('theme-icon-moon');
-
-        if (!this.themeToggleButton) return;
+        this.themeToggleButtons = document.querySelectorAll('.theme-toggle');
+        if (this.themeToggleButtons.length === 0) return;
 
         // Verifica a preferência salva no navegador ou a preferência do sistema
         const savedTheme = localStorage.getItem('theme');
@@ -703,28 +700,40 @@ const ThemeModule = {
             this.enableLightMode();
         }
 
-        // Adiciona o evento de clique ao botão
-        this.themeToggleButton.addEventListener('click', () => {
-            if (document.documentElement.classList.contains('dark')) {
-                this.enableLightMode();
-            } else {
-                this.enableDarkMode();
-            }
+        // Adiciona o evento de clique a todos os botões de tema
+        this.themeToggleButtons.forEach(button => {
+            button.addEventListener('click', (e) => {
+                e.preventDefault(); // Impede o comportamento padrão do link/botão
+                if (document.documentElement.classList.contains('dark')) {
+                    this.enableLightMode();
+                } else {
+                    this.enableDarkMode();
+                }
+                // Fecha o menu mobile ao trocar o tema, se estiver aberto
+                MobileMenuModule.closeMenu();
+            });
         });
+    },
+
+    updateIcons() {
+        const allSunIcons = document.querySelectorAll('.theme-icon-sun');
+        const allMoonIcons = document.querySelectorAll('.theme-icon-moon');
+        const isDark = document.documentElement.classList.contains('dark');
+
+        allSunIcons.forEach(icon => icon.classList.toggle('hidden', isDark));
+        allMoonIcons.forEach(icon => icon.classList.toggle('hidden', !isDark));
     },
 
     enableDarkMode() {
         document.documentElement.classList.add('dark');
         localStorage.setItem('theme', 'dark');
-        this.sunIcon.classList.add('hidden');
-        this.moonIcon.classList.remove('hidden');
+        this.updateIcons();
     },
 
     enableLightMode() {
         document.documentElement.classList.remove('dark');
         localStorage.setItem('theme', 'light');
-        this.sunIcon.classList.remove('hidden');
-        this.moonIcon.classList.add('hidden');
+        this.updateIcons();
     }
 };
 
