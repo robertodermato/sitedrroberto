@@ -684,6 +684,51 @@ const AccessibilityModule = {
     }
 };
 
+// ===== MÓDULO DE TEMA (MODO ESCURO) =====
+const ThemeModule = {
+    init() {
+        this.themeToggleButton = document.getElementById('theme-toggle');
+        this.sunIcon = document.getElementById('theme-icon-sun');
+        this.moonIcon = document.getElementById('theme-icon-moon');
+
+        if (!this.themeToggleButton) return;
+
+        // Verifica a preferência salva no navegador ou a preferência do sistema
+        const savedTheme = localStorage.getItem('theme');
+        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+        if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
+            this.enableDarkMode();
+        } else {
+            this.enableLightMode();
+        }
+
+        // Adiciona o evento de clique ao botão
+        this.themeToggleButton.addEventListener('click', () => {
+            if (document.documentElement.classList.contains('dark')) {
+                this.enableLightMode();
+            } else {
+                this.enableDarkMode();
+            }
+        });
+    },
+
+    enableDarkMode() {
+        document.documentElement.classList.add('dark');
+        localStorage.setItem('theme', 'dark');
+        this.sunIcon.classList.add('hidden');
+        this.moonIcon.classList.remove('hidden');
+    },
+
+    enableLightMode() {
+        document.documentElement.classList.remove('dark');
+        localStorage.setItem('theme', 'light');
+        this.sunIcon.classList.remove('hidden');
+        this.moonIcon.classList.add('hidden');
+    }
+};
+
+
 // ===== MÓDULO DE UTILITIES =====
 const Utils = {
     // Debounce function
@@ -757,6 +802,7 @@ if (document.readyState === 'loading') {
 function initializeSite() {
     // Initialize additional modules if needed
     AccessibilityModule.init();
+    ThemeModule.init();
 }
 
 // ===== FIM DO ARQUIVO JAVASCRIPT =====
