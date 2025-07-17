@@ -62,14 +62,13 @@
     <nav class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm shadow-lg z-50" role="navigation" aria-label="Navegação principal">
         <div class="container mx-auto px-4">
             <div class="flex items-center justify-between h-16">
-                <!-- Logo -->
                 <div class="flex-shrink-0 flex items-center space-x-2"> <img src="./img/logo.png" alt="Logo Dr. Roberto Rezende" class="h-8 w-auto"> 
                     <span class="bg-verde-escuro text-white px-3 py-1.5 rounded-lg font-bold text-sm"> Dr. Roberto Rezende
                     </span>
                 </div>
                 
                 <!-- Menu Desktop -->
-                <div class="hidden md:block">
+                <div class="hidden md:flex items-center">
                     <div class="ml-10 flex items-baseline space-x-8">
                         <a href="#inicio" class="nav-link text-gray-700 hover:text-verde-escuro transition-colors duration-300" aria-label="Ir para seção Início">Início</a>
                         <a href="#sobre" class="nav-link text-gray-700 hover:text-verde-escuro transition-colors duration-300" aria-label="Ir para seção Sobre">Sobre</a>
@@ -79,9 +78,20 @@
                         <a href="#convenios" class="nav-link text-gray-700 hover:text-verde-escuro transition-colors duration-300" aria-label="Ir para seção Convênios">Convênios</a>
                         <a href="#localizacao" class="nav-link text-gray-700 hover:text-verde-escuro transition-colors duration-300" aria-label="Ir para seção Localização">Localização</a>
                         <a href="#atuacao" class="nav-link text-gray-700 hover:text-verde-escuro transition-colors duration-300" aria-label="Ir para seção Áreas de Atuação">Áreas de Atuação</a>
-                    </div>                   
+                    </div>
+                    
+                    <div class="ml-8">
+                        <button class="theme-toggle text-gray-700 hover:text-verde-escuro p-2 rounded-full transition-colors duration-300" type="button" aria-label="Alternar tema">
+                            <svg class="theme-icon-sun h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                            </svg>
+                            <svg class="theme-icon-moon h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                            </svg>
+                        </button>
+                    </div>
                 </div>
-                
+
                 <!-- Menu Mobile Button -->
                 <div class="md:hidden flex items-center space-x-2">
                     <button class="theme-toggle text-gray-700 hover:text-verde-escuro p-2 rounded-full transition-colors duration-300" type="button" aria-label="Alternar tema">
@@ -92,14 +102,12 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
                         </svg>
                     </button>
-
                     <button type="button" class="mobile-menu-button bg-verde-escuro text-white p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-verde-forte" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menu de navegação">
                         <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
                     </button>
                 </div>
-                
             </div>
             
             <!-- Menu Mobile -->
@@ -113,23 +121,7 @@
                     <a href="#convenios" class="nav-link text-gray-700 hover:text-verde-escuro transition-colors duration-300">Convênios</a>
                     <a href="#localizacao" class="nav-link text-gray-700 hover:text-verde-escuro transition-colors duration-300">Localização</a>
                     <a href="#atuacao" class="nav-link text-gray-700 hover:text-verde-escuro transition-colors duration-300">Áreas de Atuação</a>
-                                
-                <!-- Dark Mode -->
-                    <div class="border-t border-gray-200/60 pt-4 mt-2">
-                        <a href="#" class="theme-toggle flex justify-between items-center w-full text-gray-700 hover:text-verde-escuro transition-colors duration-300" aria-label="Alternar tema">
-                            <span>Alternar Tema</span>
-                            <span class="relative h-6 w-6">
-                                <svg class="theme-icon-sun h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
-                                </svg>
-                                <svg class="theme-icon-moon h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
-                                </svg>
-                            </span>
-                        </a>
-                    </div>
                 </div>
-                
             </div>
         </div>
     </nav>
