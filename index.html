@@ -75,6 +75,7 @@
                         <a href="#sobre" class="nav-link text-gray-700 hover:text-verde-escuro transition-colors duration-300" aria-label="Ir para seção Sobre">Sobre</a>
                         <a href="#avaliacoes" class="nav-link text-gray-700 hover:text-verde-escuro transition-colors duration-300" aria-label="Ir para seção Avaliações">Avaliações</a>
                         <a href="#clinica" class="nav-link text-gray-700 hover:text-verde-escuro transition-colors duration-300" aria-label="Ir para seção A Clínica">A Clínica</a>
+                        <a href="#instalacoes" class="nav-link text-gray-700 hover:text-verde-escuro transition-colors duration-300" aria-label="Ir para seção Instalações">Instalações</a> 
                         <a href="#convenios" class="nav-link text-gray-700 hover:text-verde-escuro transition-colors duration-300" aria-label="Ir para seção Convênios">Convênios</a>
                         <a href="#localizacao" class="nav-link text-gray-700 hover:text-verde-escuro transition-colors duration-300" aria-label="Ir para seção Localização">Localização</a>
                         <a href="#atuacao" class="nav-link text-gray-700 hover:text-verde-escuro transition-colors duration-300" aria-label="Ir para seção Áreas de Atuação">Áreas de Atuação</a>
@@ -98,6 +99,7 @@
                     <a href="#sobre" class="nav-link text-gray-700 hover:text-verde-escuro transition-colors duration-300">Sobre</a>
                     <a href="#avaliacoes" class="nav-link text-gray-700 hover:text-verde-escuro transition-colors duration-300">Avaliações</a>
                     <a href="#clinica" class="nav-link text-gray-700 hover:text-verde-escuro transition-colors duration-300">A Clínica</a>
+                    <a href="#instalacoes" class="nav-link text-gray-700 hover:text-verde-escuro transition-colors duration-300">Instalações</a> 
                     <a href="#convenios" class="nav-link text-gray-700 hover:text-verde-escuro transition-colors duration-300">Convênios</a>
                     <a href="#localizacao" class="nav-link text-gray-700 hover:text-verde-escuro transition-colors duration-300">Localização</a>
                     <a href="#atuacao" class="nav-link text-gray-700 hover:text-verde-escuro transition-colors duration-300">Áreas de Atuação</a>
@@ -259,42 +261,51 @@
                         <div class="w-24 h-1 bg-verde-escuro mx-auto mb-8"></div>
                     </div>
  
-            <!-- Botão Link CLÍNICA -->
-            <div class="text-center mb-12" data-aos="fade-up" data-aos-delay="200"> <a href="https://mddermatologiaintegrada.com.br/" target="_blank" rel="noopener noreferrer" 
-                    class="inline-block bg-verde-escuro text-white px-8 py-4 rounded-lg font-semibold text-xl 
+                    <!-- Botão Link CLÍNICA -->
+                    <div class="text-center mb-12" data-aos="fade-up" data-aos-delay="200"> <a href="https://mddermatologiaintegrada.com.br/" target="_blank" rel="noopener noreferrer" 
+                        class="inline-block bg-verde-escuro text-white px-8 py-4 rounded-lg font-semibold text-xl 
                            hover:bg-verde-forte transition duration-300 ease-in-out shadow-lg">
-                    Site da Clínica
-                </a>
-            </div>
-
-            <div class="grid grid-cols-1 gap-12 items-start"> <div data-aos="fade-up"> <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-6">
-                    <!-- Texto da CLÍNICA populado pelo config json --> </div>
-                </div>
-
-                <div class="mt-12" data-aos="fade-up" data-aos-delay="200"> <h3 class="text-3xl font-bold text-center text-gray-800 mb-8">Conheça Nossas Instalações</h3>
-                    <div class="clinic-carousel-container relative overflow-hidden rounded-2xl shadow-2xl">
-                        <div class="clinic-carousel flex transition-transform duration-500 ease-in-out" id="clinic-carousel">
-                            </div>
-                        <button class="carousel-prev absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white text-verde-escuro p-2 rounded-full shadow-lg transition-all duration-300" aria-label="Foto anterior">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
-                            </svg>
-                        </button>
-                        <button class="carousel-next absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white text-verde-escuro p-2 rounded-full shadow-lg transition-all duration-300" aria-label="Próxima foto">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-                            </svg>
-                        </button>
+                        Site da Clínica
+                        </a>
                     </div>
-                    <div class="flex justify-center mt-6 space-x-2" id="carousel-indicators">
-                        </div>
+
+                    <div class="grid grid-cols-1 gap-12 items-start"> 
+                        <div data-aos="fade-up"> 
+                            <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-6">
+                                <!-- Texto da CLÍNICA populado pelo config json --> 
+                            </div>
+                        </div>                
+                    </div>
                 </div>
             </div>
-            </div>
-    </div>
-</section>
+        </section>    
         
-        <!-- SEÇÃO COVÊNIOS -->        
+        <!-- SEÇÃO INSTALAÇÕES --> 
+        <section id="instalacoes" class="py-20 bg-verde-claro" aria-labelledby="instalacoes-heading">
+            <div class="container mx-auto px-4">
+                <div class="max-w-6xl mx-auto">
+                    <div data-aos="fade-up" data-aos-delay="200">
+                        <h2 id="instalacoes-heading" class="text-4xl md:text-5xl font-bold text-center text-gray-800 mb-16">Conheça Nossas Instalações</h2>
+                        <div class="clinic-carousel-container relative overflow-hidden rounded-2xl shadow-2xl">
+                            <div class="clinic-carousel flex transition-transform duration-500 ease-in-out" id="clinic-carousel"></div>
+                            <button class="carousel-prev absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white text-verde-escuro p-2 rounded-full shadow-lg transition-all duration-300" aria-label="Foto anterior">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                                </svg>
+                            </button>
+                            <button class="carousel-next absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white text-verde-escuro p-2 rounded-full shadow-lg transition-all duration-300" aria-label="Próxima foto">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="flex justify-center mt-6 space-x-2" id="carousel-indicators"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- SEÇÃO CONVÊNIOS -->        
         </section> <section id="convenios" class="py-20 bg-white" aria-labelledby="convenios-heading">
             <div class="container mx-auto px-4">
                     <div class="max-w-6xl mx-auto text-center">    
@@ -532,6 +543,8 @@
                         <a href="#sobre" class="block text-gray-700 hover:text-gray-900 transition-colors">Sobre</a>
                         <a href="#avaliacoes" class="block text-gray-700 hover:text-gray-900 transition-colors">Avaliações</a>
                         <a href="#clinica" class="block text-gray-700 hover:text-gray-900 transition-colors">A Clínica</a>
+                        <a href="#instalacoes" class="block text-gray-700 hover:text-gray-900 transition-colors">Instalações</a> 
+                        <a href="#convenios" class="nav-link text-gray-700 hover:text-GRAY-900 transition-colors">Convênios</a>
                         <a href="#localizacao" class="block text-gray-700 hover:text-gray-900 transition-colors">Localização</a>
                         <a href="#atuacao" class="block text-gray-700 hover:text-gray-900 transition-colors">Áreas de Atuação</a>
                     </div>
