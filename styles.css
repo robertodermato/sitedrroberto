@@ -605,3 +605,15 @@ html.dark .theme-toggle:hover {
 html.dark .mobile-menu .border-t {
     border-color: rgba(205, 200, 194, 0.2);
 }
+
+/* Estilo para botões personalizados dentro dos cards */
+.btn-custom {
+    background-color: #2d3d55 !important; /* Cor principal (azul escuro) */
+    color: white !important;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-custom:hover {
+    background-color: #1a2a40 !important; /* Cor mais escura para hover */
+    transform: scale(1.05);
+}
